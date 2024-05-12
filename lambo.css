@@ -1,0 +1,588 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(246, 253, 255);
+    padding : 0;
+    margin:0;
+    overflow-x: hidden;
+}
+.trail-1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color : white;
+    position : relative;
+    display: grid;
+    grid-template-columns: 0.3fr 0.5fr 1fr;
+    overflow: hidden;  /* This ensures that any overflowing content within children is hidden */
+}
+
+.main {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+    overflow: hidden;  /* Hide overflow to ensure parts of the image outside the bounds are not shown */
+}
+
+.title {
+    font-size: 100px;
+    width: 100%;  /* Ensure the title div takes up the full width of its parent */
+    height: 100%;  /* Make sure the title div is as tall as its parent */
+    display: flex;  /* Use flex to center the image */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;  /* Hide any overflow from the image */
+}
+
+.title img {
+    height: 100%;  /* Make the image fill the height */
+    width: auto;  /* Allow the width to adjust based on the aspect ratio of the image */
+}
+
+.js-title-1, .js-title-2 {
+    opacity: 0.5;
+}
+
+.main- {
+    display: none;
+}
+
+.models
+{
+    position : absolute;
+    top : 2%;
+    left : 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight : 900;
+    font-size : 80px;
+}
+.left 
+{
+    position: absolute;
+    top : 25%;
+    left : 2%;
+}
+.right 
+{
+    position: absolute;
+    top : 25%;
+    left : 6%;
+}
+.explore
+{
+    position : absolute;
+    bottom : 30%;
+    left : 5%;
+    font-weight : 700;
+    font-size : 24px;
+}
+.car-title
+{
+    position : absolute;
+    bottom : 70%;
+    left : 15%;
+    font-weight : 900;
+    font-size : 50px;
+}
+.car-matter
+{
+    position : absolute;
+    bottom : 60%;
+    left : 15%;
+    font-weight : 900;
+    font-size : 30px;
+}
+.arrow
+{
+    color : white;
+    width : 50px;
+    transition: all 0.2s;
+}
+.arrow:hover
+{
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+.plus
+{
+    width : 50px;
+    margin-bottom : -15px;
+    margin-right : 10px;
+}
+.sub-mod
+{
+    display : none;
+    position : absolute;
+    top : 50%;
+    left : 25%;
+    background-color: rgb(84, 84, 84);
+    opacity: 0.6;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.sub-mod div
+{
+    font-family : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size : 28px;
+    background-color: black;
+    padding : 20px 100px;
+
+}
+.sub-mod div:hover
+{
+    background-color: aliceblue;
+    color: black;
+}
+
+#myVideo1 {
+    pointer-events: none; /* Disables mouse interactions with the video */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Puts the video behind other elements */
+}
+
+.p-1
+{
+    color : white;
+    position: relative;
+
+}
+.path 
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size : 20px;
+    background-color: blueviolet;
+    padding : 10px 40px;
+    border-radius : 10px;
+    position: absolute;
+    top : 5%;
+    left : 5%;
+    color : white;
+}
+
+.name
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    top : 15%;
+    left : 5%;
+    font-size : 40px;
+}
+.content
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    top : 20%;
+    left : 5%;
+    font-size : 100px;
+}
+
+.container
+{
+    padding : 0px 60px;
+    font-family :Arial, Helvetica, sans-serif;
+    font-size : 24px;
+    width : 90%;
+    position: absolute;
+    bottom : 5%;
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.two
+{
+    font-size : 20px;
+}
+.down-img
+{
+    position: absolute;
+    top : 45%;
+    left : 10%;
+    width : 100px;
+}
+.get
+{
+    position: absolute;
+    bottom : 20%;
+    right : 2%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size : 70px;
+}
+
+.p-2
+{
+    margin-top : 100px;
+    display : grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+.p-2-img
+{
+    width : 1000px;
+}
+.p-2-content
+{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.p-2-title
+{
+    margin : 30px;
+    font-family : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size : 40px;
+}
+.p-2-matter
+{
+    line-height: 25px;
+}
+
+.video11
+{
+    position: relative;
+    margin-top : 100px;
+    display : flex;
+    justify-content: center;
+}
+.play-button
+{
+    position: absolute;
+    width : 100px;
+    top : 46%;
+    left:46%;
+}
+#myVideo11 {
+    pointer-events: none; /* Disables mouse interactions with the video */
+    width: 90%;
+    height: 650px;
+    z-index: -1; /* Puts the video behind other elements */
+}
+.imgs-inte-exte img {
+    width: 100%;  /* Make the image fill the container */
+    height: auto;  /* Keep the image's aspect ratio */
+    clip-path: polygon(20% 0, 100% 0, 80% 100%, 0% 100%);
+    height : 350px;
+    width : 1000px;
+}
+.inte-exte
+{
+    height : 1300px;
+    position: relative;
+    margin-top : 100px;
+}
+
+.inte-exte-img-1
+{
+    position: absolute;
+    top : 110px;
+    right : -340px;
+}
+.inte-exte-img-2
+{
+    position: absolute;
+    top : 500px;
+    right : -120px;
+}
+.inte-exte-img-3
+{
+    position: absolute;
+    top : 550px;
+    right : 750px;
+}
+.inte-exte-img-4
+{
+    position: absolute;
+    top : 950px;
+    left : -460px;
+}
+.inte-exte-content,.exte-content
+{
+    background-color: rgb(252, 248, 255);
+    width : 700px;
+    height : 400px;
+    margin : 0px 100px;
+    padding : 50px 50px;
+    border-radius: 20px;;
+}
+.exte-content
+{
+    position: absolute;
+    bottom : 0;
+    right : 0;
+    height : 300px;
+}
+
+.engi 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.audio-toggle
+{
+    margin : 100px 10px 10px 100px;
+    width : 200px;
+    cursor : pointer
+}
+.engine-1
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size : 30px;
+    margin : 10px 70px
+}
+
+.engi-2
+{
+    background-color: black;
+    position: relative;
+    margin-top : 100px;
+    margin-bottom : 200px;
+}
+.e-img img
+{
+    opacity : 0.5;
+    
+}
+.engi-2-matter
+{
+    position: absolute;
+    top : 10%;
+    left : 5%;
+    color : white;
+    width : 600px;
+}
+
+.contact-us
+{
+    width : 110px;
+    position: absolute;
+    left : 10%;
+    top : 110%;
+}
+.total-sign-up
+{
+    display : none;
+}
+.sign-up
+{
+    margin-top : -70px;
+    position : relative;
+    text-align: center;
+    width : 800px;
+    height : 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left:25%;
+    align-items: center;
+}
+.sign-up-banner
+{
+    border-radius : 10px;
+    z-index :-1;
+    position: absolute;
+    width :100%;
+    height : 100%;
+    filter: brightness(30%);
+}
+.sign-up-text{
+    margin-top : 20px;
+    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size : 32px;   
+    font-weight : 200;
+    color : white;
+    width : 400px;
+}
+.mail
+{
+    width : 500px;
+    padding : 20px 200px 20px 20px;
+    border: none;
+    font-size : 20px;
+    border-radius : 15px;
+    
+}
+.sign-up-btn
+{
+    transition: all 0.5s;
+    margin-left : -200px;
+    padding : 10px 20px;
+    border : none;
+    border-radius : 5px;
+    background-color : red;
+    color : white;
+    &:hover{
+        transform: scale(1.15);
+        background-color : rgb(184, 0, 9);
+    }
+
+}
+
+.spec
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size : 50px;
+}
+
+.visible-spec {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25%;
+    width: 700px;
+    font-size: 14px;
+    position: relative; /* Necessary for positioning the pseudo-element */
+    overflow: hidden; /* Keeps the line within the bounds of the div */
+}
+
+.visible-spec::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Align the line to the bottom of the div */
+    left: 0;
+    width: 0; /* Start with no visible line */
+    height: 2px; /* Thickness of the line */
+    background-color: #000; /* Color of the line */
+    transition: width 0.5s ease-in-out; /* Smooth transition for the line width */
+}
+
+.visible-spec:hover::after {
+    width: 100%; /* Full width on hover */
+}
+.between-spec
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size : 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top : 50px;
+}
+.all-spec
+{
+    position: relative;
+}
+.invisible-spec
+{
+    display : none;
+    height : 1800px;
+}
+.spec-part-1
+{
+    position: absolute;
+    top : 600px;
+    left : -140px;
+}
+.spec-part-2
+{
+    position: absolute;
+    top : 600px;
+    right : 200px;
+}
+.spec-part-3
+{
+    position: absolute;
+    top : 1100px;
+    left : -140px;
+}
+
+.spec-part-3 .spec
+{
+    margin-left : 200px;
+}
+
+.spec-part-4
+{
+    position: absolute;
+    top : 1000px;
+    right : 200px;
+}
+.spec-part-5
+{
+    position: absolute;
+    top : 1600px;
+    right : 200px;
+}
+.spec-part-6
+{
+    position: absolute;
+    top : 1900px;
+    right : 200px;
+}
+
+.spec-part-7
+{
+    position: absolute;
+    top : 2100px;
+    left : 300px;
+}
+.spec-part-7 .spec
+{
+    margin-left : 200px;
+}
+
+#slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    height : 800px;
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+.final
+{
+    margin-top : 100px;
+}
+
+.final-sign-up
+{
+    background-color: #000;
+    position: relative;
+    text-align: center;
+    margin-top : 200px;
+    padding : 0px 10px;
+    height : 700px;
+}
+
+.final-banner
+{
+    position : relative;
+    filter: blur(5px) brightness(50%);
+}
+
+.final-text
+{
+    color : rgb(255, 255, 255);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size : 70px;
+    position: relative;
+    top : -500px;
+    width : 1000px;
+    left : 18%;
+}
+
+#glowingText span:hover {
+    color: #fff; /* White text on hover */
+    text-shadow:
+        0 0 5px rgb(200, 0, 255),
+        0 0 10px rgb(38, 0, 255),
+        0 0 20px rgb(74, 255, 89),
+        0 0 40px rgba(255,0,255,1),
+        0 0 80px rgb(255, 0, 255),
+        0 0 90px rgb(123, 0, 255),
+        0 0 100px rgb(255, 0, 208),
+        0 0 150px rgb(144, 0, 255);
+}
